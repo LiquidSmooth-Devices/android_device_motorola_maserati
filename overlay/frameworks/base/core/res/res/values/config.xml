@@ -59,6 +59,9 @@
         <item>"/dev/ttyUSB4"</item>
     </string-array>
 
+    <!-- Turn on the keyboard lights -->
+    <integer name="config_keyboardBrightnessSettingDefault">155</integer>
+
     <!-- MMS user agent string -->
     <string name="config_mms_user_agent" translatable="false">motoxt894</string>
 
