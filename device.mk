@@ -48,11 +48,9 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_FOLDER)/vold.fstab:system/etc/vold.fstab \
     $(DEVICE_FOLDER)/prebuilt/usr/idc/omap4-keypad.idc:system/usr/idc/omap4-keypad.idc \
     $(DEVICE_FOLDER)/prebuilt/usr/keychars/omap4-keypad.kcm:system/usr/keychars/omap4-keypad.kcm \
-    $(DEVICE_FOLDER)/prebuilt/usr/keylayout/omap4-keypad.kl:system/usr/keylayout/omap4-keypad.kl
-    
-# OTA ID
-PRODUCT_PROPERTY_OVERRIDES += \
-    otaupdater.otaid=liquidmaserati
+    $(DEVICE_FOLDER)/prebuilt/usr/keylayout/omap4-keypad.kl:system/usr/keylayout/omap4-keypad.kl \
+    $(DEVICE_FOLDER)/prebuilt/usr/keylayout/atmxt-i2c.kl:system/usr/keylayout/atmxt-i2c.kl
+
 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 $(call inherit-product, vendor/motorola/maserati/maserati-vendor.mk)
